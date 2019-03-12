@@ -47,6 +47,7 @@ class PetsController < ApplicationController
     
     
     
+    
     # @pet.update(params[:pet])
     # if params[:owner][:name]
     #   @pet.owner = Owner.create(name: params[:owner][:name])
