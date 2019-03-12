@@ -46,7 +46,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     binding.pry
     @pet.update(params[:pet])
-    
+    if params[:owner][:id]
     @pet.save
     redirect to "pets/#{@pet.id}"
   end
