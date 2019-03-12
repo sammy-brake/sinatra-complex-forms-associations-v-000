@@ -40,7 +40,7 @@ class PetsController < ApplicationController
     params[:pet]["owner_id"] = []
     end
     #######
-    binding.pry
+    # binding.pry
     @pet = Pet.find_by_id(params[:id])
     @pet.name = params[:pet][:name]
     
