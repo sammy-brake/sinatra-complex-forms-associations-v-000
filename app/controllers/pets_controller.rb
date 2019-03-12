@@ -41,7 +41,7 @@ class PetsController < ApplicationController
     end
     #######
     binding.pry
-    @pet = Pet.
+    @pet = Pet.find_by_id(params[:id])
     
     
     
