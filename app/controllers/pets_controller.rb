@@ -40,9 +40,9 @@ class PetsController < ApplicationController
     params[:pet]["owner_id"] = []
     end
     #######
-   binding.pry
+  
     
-    if Pet.find_by_name
+    
     
     
     
