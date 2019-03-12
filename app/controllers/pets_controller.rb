@@ -43,14 +43,17 @@ class PetsController < ApplicationController
     #######
    binding.pry
     
-    @pet.update(params[:pet])
-    if params[:owner][:name]
-      @pet.owner = Owner.create(name: params[:owner][:name])
-    else 
-      @pet.owner = Owner.find_by_id(params[:id])
-    end 
+    if Pet.find_by_name
     
-    @pet.save
+    
+    
+    # @pet.update(params[:pet])
+    # if params[:owner][:name]
+    #   @pet.owner = Owner.create(name: params[:owner][:name])
+    # else 
+    #   @pet.owner = Owner.find_by_id(params[:id])
+    # end 
+    # @pet.save
     
     
     redirect to "pets/#{@pet.id}"
